@@ -20,21 +20,27 @@ public final class University extends Organization {
     //
     // Instance Data Fields
     //
-    private String name;
-    private String motto_in_latin;
-    private String motto_in_english;
-    private int year_of_establishment;
-    private String type;
-    private String location;
-    private String address;
-    private String colors;
-    private String mascot;
-    private String website;
+    //
+    private String universityName;
+    
+    //  private String name;
+    // private String motto_in_latin;
+    // private String motto_in_english;
+    // private int year_of_establishment;
+    // private String type;
+    // private String location;
+    // private String address;
+    // private String colors;
+    // private String mascot;
+    // private String website;
 
     //
     // Constructors
     //
     public University() {
+    }
+    public University(String universityName){
+        this.universityName = universityName;
     }
 
     //
@@ -44,6 +50,9 @@ public final class University extends Organization {
     //
     // Additional Methods
     //
+    public String displayInfo() {
+        return "University: " + this.universityName;
+    }
 
     //
     // Language

@@ -67,7 +67,7 @@ public final class SFGiantsCardGenerator {
     //
     // Constructors
     //
-    private SFGiantsCardGenerator() {}
+    SFGiantsCardGenerator() {}
 
     //
     // Instance Methods

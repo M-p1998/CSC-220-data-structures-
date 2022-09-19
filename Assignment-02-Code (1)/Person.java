@@ -21,19 +21,67 @@ public sealed abstract class Person implements Greeting permits Student, Player,
     //
     // Instance Data Fields
     //
+    private int Id;
+
+    private String Name;
+
+    private int PhoneNo;
+
+    private String Address;
+
+    private String Dept;
     
 
     // static member
-    private static int noOfColors=0;
+    // private static int noOfColors=0;
 
     //
     // Constructors
     //
     public Person() {
-    }
+    } 
+
+    public Person(int Id, String Name, int PhoneNo, String Address, String Dept) {
+    this.Id = Id;
+    this.Name= Name;
+    this.PhoneNo = PhoneNo ;
+    this.Address= Address;
+    this.Dept= Dept;
+  }
 
     // Instance Methods
+    public void PersonDetails()  {
 
+    System.out.println("The Id of the person is :" +  Id);
+
+    System.out.println("The Name of the person is :" + Name);
+
+    System.out.println("The Phone number of the person is :" + PhoneNo);
+
+    System.out.println("The Address of the person is :" + Address);
+
+    System.out.println("The Department of the person is :" + Dept);
+
+  }
+
+    // getters/accessors and setters/mutators
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public String getFirst_name() {
+        return first_name;
+    }public void setFirst_name(String first_name) {
+        this.first_name = first_name;
+    }
+    public String getLast_name() {
+        return last_name;
+    }
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
+    }
     
 
     //
@@ -51,4 +99,25 @@ public sealed abstract class Person implements Greeting permits Student, Player,
     //
     // @override
     //
+    // @Override
+    // public String toString() {
+    //     // TODO Auto-generated method stub
+    //     return super.toString();
+    // }
+//     @Override
+//     public void PersonDetails(){
+
+//     System.out.println("-------------After overriding , the details of the person is shown below--------------);
+
+//     System.out.println("The Id of the person is :", &Id);
+
+//     System.out.println("The Name of the person is :", &Name);
+
+//     System.out.println("The Phone number of the person is :", &PhoneNo);
+
+//     System.out.println("The Address of the person is :", &Address);
+
+//     System.out.println("The Department of the person is :", &Dept);
+
+//   }
 }

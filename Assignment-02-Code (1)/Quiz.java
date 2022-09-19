@@ -12,19 +12,54 @@ package assignment02PartB;
 // Please organize all the given files in 1 same package
 // Please make sure to read the provided "_ListOf-PleaseDoNotChange.txt"
 
+import java.util.ArrayList;
+
 public final class Quiz {
+    private String teacher;
+    private String student;
+    private final String topic;
+    private final ArrayList<QuestionAnswer> questionAnswer;
 
     //
     // Instance Data Fields
     //
-    private String questions;
-    private String answers;
+    // private Club club;
+    // private Student student;
+    // private ArrayList<QuestionAnswer> qa = new ArrayList<QuestionAnswer>();
+
+    // public static String getQuestions(int index){
+    //     ArrayList<String> question = new ArrayList<>();
+    //     question.add("Which type of class has 'protected' constructors?");
+    //     question.add("Which type of method did Java 8 add to 'interface'?");
+    //     question.add("What new keyword did Java 13 add to 'switch' statement?");
+    //     question.add("In Java 15, what keyword pairs with 'sealed'?");
+    //     question.add("Giants in Spanish?");
+    //     question.add("Take me out to the...?");
+    //     return question.get(index);
+        
+    // }
+    // public static String getAnswer(int index){
+    //     ArrayList<String> answer = new ArrayList<>();
+    //     answer.add("abstract");
+    //     answer.add("default?");
+    //     answer.add("yield");
+    //     answer.add("permits");
+    //     answer.add("gigantes");
+    //     answer.add("ball game");
+    //     return answer.get(index);
+        
+    // }
 
     //
     // Constructors
     //
+    // public Quiz() {
+    // }
+
     public Quiz() {
-    }
+        this.questionAnswer = new ArrayList();
+        this.topic = "OOP & SF Giants";
+        this.makeDefaultQuiz();}
 
     //
     // Instance Methods
@@ -33,6 +68,12 @@ public final class Quiz {
     //
     // Additional Instance Methods
     //
+    public void printQuiz() {
+
+    }
+    public boolean runQuiz() {
+        
+    }
 
     //
     // Language

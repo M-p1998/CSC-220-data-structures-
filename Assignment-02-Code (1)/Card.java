@@ -14,14 +14,18 @@ package assignment02PartB;
 
 public final class Card {
 
+    private assignment02PartB.Student student;
+    private String cardRecipient;
+    private String cardMessage;
+    private int numCards =0;
     //
     // Instance Data Fields
     //
     private int artSize = 0;     // Please change artSize, if needed, to get an identical output
     private String artFont = ""; // Please change artFont, if needed, to get an identical output
 
-    private String card_name;
-    private String card_symbol;
+    // private String card_name;
+    // private String card_symbol;
     //
     // Constructors
     //
@@ -40,5 +44,27 @@ public final class Card {
     //
     // Language
     //
+
+    @Override
+    public String toString()
+    {
+        String returnString;
+        returnString = "From: "+ this.student + " \t Recipient: "+ this.cardRecipient+ " \t Message: "+ this.cardMessage;
+        return returnString;
+    }
+
+    public void setStudent(assignment02PartB.Student student) {
+        this.student = student;
+    }
+    public void setCardRecipient(String cardRecipient) {
+        this.cardRecipient = cardRecipient;
+    }
+
+    public void setCardMessage(String cardMessage) {
+        this.cardMessage = cardMessage;
+    }
+    public void setNumCards(int numCards) {
+        this.numCards = numCards;
+    }
 
 }

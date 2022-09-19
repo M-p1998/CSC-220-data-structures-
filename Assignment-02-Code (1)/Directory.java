@@ -25,7 +25,10 @@ public final class Directory {
     //
     // Constructors
     //
-    public Directory() {
+    public Directory(String reciptLog) {
+        path = receiptLog;
+        directory = new File(receiptLog);
+        directory.mkdirs();
     }
 
     //
