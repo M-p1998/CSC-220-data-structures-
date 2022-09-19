@@ -55,8 +55,8 @@ public class Timer {
 
     // DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss [ms 'ms']");
 
-    // Scanner sc = new Scanner(System.in);
-    // String timeZone = sc.nextLine();
+    // // Scanner sc = new Scanner(System.in);
+    // // String timeZone = sc.nextLine();
 
     // if (timeZone.equals("Pacific Standard Time")){
     //     dateFormat.setTimeZone(TimeZone.getTimeZone("America/Los_Angeles"));
@@ -74,7 +74,9 @@ public class Timer {
     //     System.out.println("");
     // }
 
-    // public String getNowTime(String s){
+  
+
+    // public String getNowTime(String s) {
     //     return null;
     // }
  

@@ -83,6 +83,10 @@ public sealed abstract class Person implements Greeting permits Student, Player,
         this.last_name = last_name;
     }
     
+    
+    public static void name() {
+        
+    }
 
     //
     // Language
