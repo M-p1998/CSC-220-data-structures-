@@ -4,7 +4,7 @@
  * CSC 220 -  Data Structures
  * File Name: Manager.java
  * Author: Duc Ta
- * Author: <First Name> <Last Name>
+ * @author: <Mya > <Phyu>
  * **********************************************
  */
 
@@ -17,15 +17,9 @@ public final class Manager extends Person {
     //
     // Instance Data Fields
     //
-    private int MrId;
 
-    private String MrName;
+    private String Name;
 
-    private int DeptId;
-
-    private String Domain;
-
-    private String BUnit;
 
     //
     // Constructors
@@ -33,17 +27,11 @@ public final class Manager extends Person {
     public Manager() {
     }
     
-    public Manager(int MrId, String MrName, int DeptId, String Domain, String BUnit){
+    public Manager(String Name){
 
-   this.MrId= MrId;
+   this.Name= Name;
 
-   this.MrName= MrName;
 
-   this.DeptId= DeptId;
-
-   this.Domain= Domain;
-
-   this.BUnit= BUnit;
  }
 
     //
@@ -51,15 +39,6 @@ public final class Manager extends Person {
     //
     public void ManagerDetails(){
 
-       System.out.println("The Id of the Manager is :" + MrId );
-
-       System.out.println("The Name of the Manager is :" + MrName);
-
-       System.out.println("The DeptId of the Manager is :" +  DeptId);
-
-       System.out.println("The Domain of the Manager is :" + Domain);
-
-       System.out.println("The BUnit of the Manager is :"+ BUnit);
 
    }
 
@@ -75,19 +54,5 @@ public final class Manager extends Person {
     //
     // Override
     //
-    // @override
-    //    public void ManagerDetails(){
 
-    //    System.out.println("-------------After overriding , the details of the manager is shown below--------------);
-
-    //    System.out.println("The Id of the Manager is :", &MrId );
-
-    //    System.out.println("The Name of the Manager is :", &MrName);
-
-    //    System.out.println("The DeptId of the Manager is :", &DeptId);
-
-    //    System.out.println("The Domain of the Manager is :", &Domain);
-
-    //    System.out.println("The BUnit of the Manager is :", &BUnit);
-    //   }  
 }

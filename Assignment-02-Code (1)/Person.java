@@ -4,7 +4,7 @@
  * CSC 220 -  Data Structures
  * File Name: Person.java
  * Author: Duc Ta
- * Author: <First Name> <Last Name>
+ * @author: <Mya > <Phyu>
  * **********************************************
  */
 
@@ -21,15 +21,12 @@ public sealed abstract class Person implements Greeting permits Student, Player,
     //
     // Instance Data Fields
     //
-    private int Id;
 
-    private String Name;
+    private String first_name;
+    private String last_name;
+    private String email;
 
-    private int PhoneNo;
 
-    private String Address;
-
-    private String Dept;
     
 
     // static member
@@ -41,26 +38,17 @@ public sealed abstract class Person implements Greeting permits Student, Player,
     public Person() {
     } 
 
-    public Person(int Id, String Name, int PhoneNo, String Address, String Dept) {
-    this.Id = Id;
-    this.Name= Name;
-    this.PhoneNo = PhoneNo ;
-    this.Address= Address;
-    this.Dept= Dept;
+    public Person(String first_name, String last_name, String email) {
+    this.first_name = first_name;
+    this.last_name= last_name;
+    this.email = email ;
+
   }
 
     // Instance Methods
     public void PersonDetails()  {
 
-    System.out.println("The Id of the person is :" +  Id);
 
-    System.out.println("The Name of the person is :" + Name);
-
-    System.out.println("The Phone number of the person is :" + PhoneNo);
-
-    System.out.println("The Address of the person is :" + Address);
-
-    System.out.println("The Department of the person is :" + Dept);
 
   }
 
@@ -91,37 +79,9 @@ public sealed abstract class Person implements Greeting permits Student, Player,
     //
     // Language
     //
-    // public void Language() {
-    //     System.out.println("Language:");
-    // }
-
-    // static method only belongs to the class
-    // public static int colors(){
-    //     return noOfColors;
-    // }
 
     //
     // @override
     //
-    // @Override
-    // public String toString() {
-    //     // TODO Auto-generated method stub
-    //     return super.toString();
-    // }
-//     @Override
-//     public void PersonDetails(){
 
-//     System.out.println("-------------After overriding , the details of the person is shown below--------------);
-
-//     System.out.println("The Id of the person is :", &Id);
-
-//     System.out.println("The Name of the person is :", &Name);
-
-//     System.out.println("The Phone number of the person is :", &PhoneNo);
-
-//     System.out.println("The Address of the person is :", &Address);
-
-//     System.out.println("The Department of the person is :", &Dept);
-
-//   }
 }

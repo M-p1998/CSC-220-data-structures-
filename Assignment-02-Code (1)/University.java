@@ -4,7 +4,7 @@
  * CSC 220 -  Data Structures
  * File Name: University.java
  * Author: Duc Ta
- * Author: <First Name> <Last Name>
+ * @author: <Mya > <Phyu>
  * **********************************************
  */
 
@@ -22,23 +22,70 @@ public final class University extends Organization {
     //
     //
     private String universityName;
-    
-    //  private String name;
-    // private String motto_in_latin;
-    // private String motto_in_english;
-    // private int year_of_establishment;
-    // private String type;
-    // private String location;
-    // private String address;
-    // private String colors;
-    // private String mascot;
-    // private String website;
+     private String motto;
+     private String location;
+     private String address;
+     private String colors;
+
+//     getters and setters
+
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getColors() {
+        return colors;
+    }
+
+    public void setColors(String colors) {
+        this.colors = colors;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getMotto() {
+        return motto;
+    }
+
+    public void setMotto(String motto) {
+        this.motto = motto;
+    }
+
+    public String getUniversityName() {
+        return universityName;
+    }
+
+    public void setUniversityName(String universityName) {
+        this.universityName = universityName;
+    }
 
     //
     // Constructors
     //
     public University() {
     }
+
+    @Override
+    public void displayAbout() {
+
+    }
+
+    @Override
+    public void displayMission() {
+
+    }
+
     public University(String universityName){
         this.universityName = universityName;
     }

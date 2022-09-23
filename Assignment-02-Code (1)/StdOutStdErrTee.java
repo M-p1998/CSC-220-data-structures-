@@ -4,7 +4,7 @@
  * CSC 220 -  Data Structures
  * File Name: StdOutStdErrTee.java
  * Author: Duc Ta
- * Author: <First Name> <Last Name>
+ * @author: <Mya > <Phyu>
  * **********************************************
  */
 
@@ -13,6 +13,7 @@ package assignment02PartB;
 // Please make sure to read the provided "_ListOf-PleaseDoNotChange.txt"
 
 import java.io.OutputStream;
+import java.io.PrintStream;
 
 public class StdOutStdErrTee extends OutputStream {
 

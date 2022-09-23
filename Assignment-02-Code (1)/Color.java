@@ -4,7 +4,7 @@
  * CSC 220 -  Data Structures
  * File Name: Color.java
  * @author: Duc Ta
- * @author: <First Name> <Last Name>
+ * @author: <Mya > <Phyu>
  * **********************************************
  */
 
@@ -28,21 +28,6 @@ public final class Color {
     }
     
 
-    // public class ANSIColors {
-    //     247 public static void main(String[] args) {
-    //     248 final String ANSI_BLACK_BACKGROUND = "\u001B[40m";
-    //     249 final String ANSI_WHITE = "\u001B[37m";
-    //     250 final String ANSI_RESET = "\u001B[0m";
-    //     251
-    //     252 System.out.println("Before");
-    //     253 System.out.println(ANSI_BLACK_BACKGROUND + ANSI_WHITE + "Test colors...” + ANSI_RESET);
-    //     254 System.out.println("After");
-    //     255 }
-    //     256 }
-    //     257 // ANSI Escape Code: 
-    //
-    // Instance Data Fields
-    //
 
     //
     // Constructors

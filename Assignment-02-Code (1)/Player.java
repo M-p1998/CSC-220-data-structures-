@@ -4,7 +4,7 @@
  * CSC 220 -  Data Structures
  * File Name: Player.java
  * Author: Duc Ta
- * Author: <First Name> <Last Name>
+ * @author: <Mya > <Phyu>
  * **********************************************
  */
 
@@ -15,15 +15,50 @@ package assignment02PartB;
 public final class Player extends Person {
 
     // Instance Data Fields
-   private int PId;
 
-   private string PlayerName;
+
+   private String PlayerName;
 
    private int Code;
 
-   private string Team;
+   private String Team;
 
-   private string Club;
+   private String Club;
+
+//   getters and setters
+
+
+    public String getPlayerName() {
+        return PlayerName;
+    }
+
+    public void setPlayerName(String playerName) {
+        PlayerName = playerName;
+    }
+
+    public int getCode() {
+        return Code;
+    }
+
+    public void setCode(int code) {
+        Code = code;
+    }
+
+    public String getTeam() {
+        return Team;
+    }
+
+    public void setTeam(String team) {
+        Team = team;
+    }
+
+    public String getClub() {
+        return Club;
+    }
+
+    public void setClub(String club) {
+        Club = club;
+    }
 
     //
     // Constructors
@@ -31,9 +66,9 @@ public final class Player extends Person {
     public Player() {
     }
 
-    public Player(int PId, string PlayerName, int Code, string Team, string Club) {
+    public Player(String PlayerName, int Code, String Team, String Club) {
 
-    this.PId = PId;
+
 
     this.PlayerName= PlayerName;
 
@@ -51,36 +86,22 @@ public final class Player extends Person {
 
     {
 
-        System.out.println("The PId of the person is :", PId );
-
-        System.out.println("The PlayerName of the person is :", PlayerName );
-
-        System.out.println("The Code of the person is :", Code);
-
-        System.out.println("The Team of the person is :", Team);
-
-        System.out.println("The Club of the person is :", Club);
-
     }  
 
     //
     // Additional Instance Methods
     //
-    public void PDAdditional()
 
-       {
+    @Override
+    public String toString() {
+        return "Player{" +
+                "PlayerName='" + PlayerName + '\'' +
+                ", Code=" + Code +
+                ", Team='" + Team + '\'' +
+                ", Club='" + Club + '\'' +
+                '}';
+    }
 
-        System.out.println("The PId of the person is :", PId );
-
-        System.out.println("The PlayerName of the person is :", PlayerName );
-
-        System.out.println("The Code of the person is :", Code);
-
-        System.out.println("The Team of the person is :", team);
-
-        System.out.println("The Club of the person is :", Club);
-
-       }  
 
     //
     // Language
@@ -90,20 +111,5 @@ public final class Player extends Person {
     // @Override
     //
 
-    // @Override
-    //     public void PDAdditional(){
 
-    //     System.out.println("-------------After overriding , the details of the player is shown below--------------);
-
-    //     System.out.println("The PId of the person is :", &PId );
-
-    //     System.out.println("The PlayerName of the person is :", &PlayerName );
-
-    //     System.out.println("The Code of the person is :", &Code);
-
-    //     System.out.println("The Team of the person is :", &Team);
-
-    //     System.out.println("The Club of the person is :", &Club);
-
-    //    }  
 }

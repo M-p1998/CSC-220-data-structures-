@@ -4,7 +4,7 @@
  * CSC 220 -  Data Structures
  * File Name: Student.java
  * Author: Duc Ta
- * Author: <First Name> <Last Name>
+ * @author: <Mya > <Phyu>
  * **********************************************
  */
 
@@ -19,18 +19,21 @@ public final class Student extends Person {
     //
     // Instance Data Fields
     //
-    // private University university;
-    // private String studentEmail;
 
-    private int StId;
 
-    private string StName;
 
-    private int Rollno;
 
-    private string Address;
+    private String firstName;
 
-    private string School;
+    private String lastName;
+
+    private String Address;
+
+    private String School;
+
+    private String email;
+
+    private University university;
     
 
     //
@@ -39,69 +42,49 @@ public final class Student extends Person {
     public Student() {
     }
 
-    public Student(int StId, string StName, int Rollno, string Address, string School){
+    public Student(String firstName, String lastName, String email, String Address, String School){
 
-   this.StId = StId;
+       this.firstName = firstName;
 
-   this.StName = StName;
+       this.lastName = lastName;
 
-   this.Rollno = Rollno;
+       this.Address = Address;
 
-   this.Address = Address;
+       this.School = School;
 
-   this.School = School;
+       this.email = email;
  }
 
     // getters/accessors and setters/mutators
     public University getUniversity() {
         return university;
     }
+
     public void setUniversity(University university) {
         this.university = university;
     }
-    public String getStudentEmail() {
-        return studentEmail;
-    }
-    public void setStudentEmail(String studentEmail) {
-        this.studentEmail = studentEmail;
-    }
 
-    
+
 
     //
     // Instance Methods
     //
     public void StudentDetails(){
 
-       System.out.println("The Id of the Student is :", StId );
+       System.out.println("The Id of the Student is :" +  firstName );
 
-       System.out.println("The Name of the Student is :", StName );
+       System.out.println("The Name of the Student is :"+  lastName );
 
-       System.out.println("The Roll No of the Student is :", Rollno);
+       System.out.println("The Address of the Student is :" + Address);
 
-       System.out.println("The Address of the Student is :", Address);
-
-       System.out.println("The School of the Student is :", School);
+       System.out.println("The School of the Student is :"+ School);
+        System.out.println("The School of the Student is :"+ email);
 
    }  
 
     //
     // Additional Methods
     //
-    public void SDAdditional(){
-
-       System.out.println("The Id of the Student is :", &StId );
-
-       System.out.println("The Name of the Student is :", &StName );
-
-       System.out.println("The Roll No of the Student is :", &Rollno);
-
-       System.out.println("The Address of the Student is :", &Address);
-
-       System.out.println("The School of the Student is :", &School);
-
-      }  
-
 
 
     //
@@ -111,20 +94,5 @@ public final class Student extends Person {
     //
     // Override
     //
-    // @override
-    //    public void SDAdditional(){
 
-    //    System.out.println("-------------After overriding , the details of the student is shown below--------------);
-
-    //    System.out.println("The Id of the Student is :", &StId );
-
-    //    System.out.println("The Name of the Student is :", &StName );
-
-    //    System.out.println("The Roll No of the Student is :", &Rollno);
-
-    //    System.out.println("The Address of the Student is :", &Address);
-
-    //    System.out.println("The School of the Student is :", &School);
-
-    //   }  
 }

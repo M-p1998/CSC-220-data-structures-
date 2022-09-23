@@ -4,7 +4,7 @@
  * CSC 220 -  Data Structures
  * File Name: Club.java
  * @author: Duc Ta
- * @author: <First Name> <Last Name>
+ * @author: <Mya > <Phyu>
  * **********************************************
  */
 
@@ -23,7 +23,7 @@ public final class Club extends Organization {
     //
     // Constructors
     //
-    public Club() {
+    public Club(String defaultClub) {
     }
 
     //
